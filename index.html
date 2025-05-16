@@ -3,76 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Geek23 | Nuclear Physics</title>
+  <title>Dario Ramirez | Nuclear Physicist</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
       color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
     }
     .container {
-      background: #fff;
+      max-width: 900px;
+      margin: auto;
       padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      width: 90%;
-      text-align: center;
+      background: white;
     }
-    .profile-pic {
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    img.profile-pic {
       width: 120px;
       height: 120px;
+      object-fit: cover;
       border-radius: 50%;
-      background: #ccc;
-      margin: 0 auto 1rem;
-      background-size: cover;
-      background-position: center;
+      margin-top: 1rem;
     }
-    h1 {
-      margin: 0.5rem 0 0.2rem;
+    h1, h2 {
+      color: #004080;
     }
-    h2 {
-      margin: 0;
-      font-weight: 400;
-      color: #555;
+    section {
+      margin-bottom: 2rem;
     }
-    p.tagline {
-      margin: 1rem 0;
-      color: #666;
-      font-style: italic;
+    ul {
+      padding-left: 1.2rem;
     }
-    .links a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      background: #007acc;
-      color: white;
-      border-radius: 6px;
-      transition: background 0.3s ease;
+    li {
+      margin-bottom: 0.5rem;
     }
-    .links a:hover {
-      background: #005f99;
+    .highlight {
+      font-weight: bold;
+      color: #222;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="profile-pic" style="background-image: url('profile.jpg');"></div>
-    <h1>Geek23</h1>
-    <h2>Nuclear Physicist</h2>
-    <p class="tagline">Driven to split atoms and solve global energy problems.</p>
+    <header>
+      <h1>Dario Alberto Ramirez Zaldivar</h1>
+      <p>Ph.D. Candidate · Nuclear Physics · Frankfurt / GSI</p>
+      <img src="images/profile_image.jpeg" alt="Profile Picture" class="profile-pic">
+    </header>
 
-    <div class="links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-      <a href="resume.pdf" target="_blank">Resume</a>
-    </div>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Ph.D. Candidate at Goethe University and GSI Helmholtzzentrum. I specialize in detector systems and heavy-ion collisions, contributing to the next-gen FAIR experiments through the CBM STS project.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <span class="highlight">Ph.D. in Nuclear Physics</span> (2021–Present), Goethe University Frankfurt.  
+          Thesis: <em>Performance of the prototype CBM Silicon Tracking System</em>
+        </li>
+        <li>
+          <span class="highlight">B.Sc. in Physics – Nuclear Track</span> (2013–2018), InSTEC, Havana.  
+          Thesis: <em>Quarkonia dynamics in nuclear media</em>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research & Experience</h2>
+      <ul>
+        <li>
+          <span class="highlight">CBM STS Group, GSI</span> — Ph.D. Researcher  
+          Developing algorithms for tracking and vertexing in the mCBM experiment.
+        </li>
+        <li>
+          <span class="highlight">InSTEC, Havana</span> — Junior Researcher and Assistant Professor  
+          Lectured on Quantum Mechanics and Thermodynamics.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Highlights & Conferences</h2>
+      <p>
+        Spoken at over <strong>15 international conferences</strong>, including:
+      </p>
+      <ul>
+        <li>Quark Matter 2022 & 2025</li>
+        <li>FAIRness Workshops</li>
+        <li>DPG Annual Meetings</li>
+        <li>CBM Collaboration Meetings</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Spanish (native), English (advanced)</li>
+        <li><strong>Programming:</strong> C++, Python, LaTeX</li>
+        <li><strong>Tools:</strong> ROOT, Geant4, Origin</li>
+        <li><strong>Soft Skills:</strong> Communication & Leadership (HGS-HIRe certified)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Awards</h2>
+      <ul>
+        <li><strong>Giersch Excellence Award 2022</strong> – for scientific excellence in Ph.D. research</li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>
