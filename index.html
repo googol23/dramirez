@@ -3,123 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dario Ramirez | Nuclear Physicist</title>
+  <title>Dario Ramirez | Physicist</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
       color: #333;
     }
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
-      padding: 2rem;
-      background: white;
-    }
-    header {
+      padding: 3rem 1.5rem;
       text-align: center;
-      margin-bottom: 2rem;
+      background: white;
+      margin-top: 5vh;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    img.profile-pic {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
+    img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-top: 1rem;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
     }
-    h1, h2 {
+    h1 {
+      margin-bottom: 0.5rem;
       color: #004080;
     }
-    section {
+    p {
+      font-size: 1.1rem;
       margin-bottom: 2rem;
     }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .highlight {
+    a.button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
-      color: #222;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #0066cc;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Dario Alberto Ramirez Zaldivar</h1>
-      <p>Ph.D. Candidate · Nuclear Physics · Frankfurt / GSI</p>
-      <img src="images/profile_image.jpeg" alt="Profile Picture" class="profile-pic">
-    </header>
-
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Ph.D. Candidate at Goethe University and GSI Helmholtzzentrum. I specialize in detector systems and heavy-ion collisions, contributing to the next-gen FAIR experiments through the CBM STS project.
-      </p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <span class="highlight">Ph.D. in Nuclear Physics</span> (2021–Present), Goethe University Frankfurt.  
-          Thesis: <em>Performance of the prototype CBM Silicon Tracking System</em>
-        </li>
-        <li>
-          <span class="highlight">B.Sc. in Physics – Nuclear Track</span> (2013–2018), InSTEC, Havana.  
-          Thesis: <em>Quarkonia dynamics in nuclear media</em>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Research & Experience</h2>
-      <ul>
-        <li>
-          <span class="highlight">CBM STS Group, GSI</span> — Ph.D. Researcher  
-          Developing algorithms for tracking and vertexing in the mCBM experiment.
-        </li>
-        <li>
-          <span class="highlight">InSTEC, Havana</span> — Junior Researcher and Assistant Professor  
-          Lectured on Quantum Mechanics and Thermodynamics.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Highlights & Conferences</h2>
-      <p>
-        Spoken at over <strong>15 international conferences</strong>, including:
-      </p>
-      <ul>
-        <li>Quark Matter 2022 & 2025</li>
-        <li>FAIRness Workshops</li>
-        <li>DPG Annual Meetings</li>
-        <li>CBM Collaboration Meetings</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Spanish (native), English (advanced)</li>
-        <li><strong>Programming:</strong> C++, Python, LaTeX</li>
-        <li><strong>Tools:</strong> ROOT, Geant4, Origin</li>
-        <li><strong>Soft Skills:</strong> Communication & Leadership (HGS-HIRe certified)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Awards</h2>
-      <ul>
-        <li><strong>Giersch Excellence Award 2022</strong> – for scientific excellence in Ph.D. research</li>
-      </ul>
-    </section>
+    <img src="images/profile_image.jpeg" alt="Dario Ramirez">
+    <h1>Dario Alberto Ramirez Zaldivar</h1>
+    <p>
+      Nuclear physicist and Ph.D. candidate at Goethe University and GSI Helmholtzzentrum.  
+      I specialize in silicon detector systems and heavy-ion collisions, contributing to the CBM experiment at FAIR.
+    </p>
+    <a class="button" href="resume.html">View Resume</a>
   </div>
 </body>
 </html>
