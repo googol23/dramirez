@@ -33,12 +33,12 @@ function exportToPDF() {
 
   const element = document.querySelector("main");
   const opt = {
-    margin:       0.5,
-    filename:     'Dario_Ramirez_CV.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2 },
-    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-  };
+  margin:       0.5,
+  filename:     'Dario_Ramirez_CV.pdf',
+  html2canvas:  { scale: 1, useCORS: true, logging: false },
+  jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' },
+  pagebreak:    { mode: ['css', 'legacy'] }
+};
 
   html2pdf().set(opt).from(element).save();
 }
