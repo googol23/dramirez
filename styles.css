@@ -103,27 +103,27 @@ ul {
 }
 
 #top-bar {
-  position: sticky;
+  position: fixed;           /* Always visible */
   top: 0;
-  background: #1f1d1d;
+  right: 0;
+  background-color: #1f1d1d; /* Background of bar */
   padding: 0.5em 1em;
   display: flex;
-  gap: 1em;
-  justify-content: flex-end;
-  border-bottom: 1px solid #444;
+  gap: 0.5em;
   z-index: 1000;
+  border-bottom-left-radius: 10px;
 }
 
 #top-bar button {
-  background-color: #b9d2e2;
-  color: #1f1d1d;
+  color: #b9d2e2;            /* Font color */
+  background-color: #323c42; /* Background color */
   border: none;
   padding: 0.5em 1em;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 #top-bar button:hover {
-  background-color: #a0c0d0;
+  background-color: #005fa3;
 }
