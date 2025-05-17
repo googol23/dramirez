@@ -13,6 +13,7 @@
 
 <link rel="canonical" href="https://googol23.github.io/dramirez/index.html">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
 <title>Dario Ramirez | Nuclear Physicist</title>
 
@@ -26,50 +27,94 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
 <style>
-    h1, h2, h3, h4, h5, h6 {
-      color: #b9d2e2;
-      font-family: 'Bebas Neue', sans-serif;
-      font-weight: normal;
+  html {
+    font-size: 100%; /* base = 16px, easily scalable */
+  }
+
+  body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background: #1f1d1d;
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #b9d2e2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    margin: 0.5em 0;
+  }
+
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+
+  header, main {
+    max-width: 56.25rem; /* 900px */
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #1f1d1d;
+    border-radius: 0.625rem; /* 10px */
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .profile img {
+    width: 7.5rem; /* 120px */
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  section {
+    margin-top: 2rem;
+  }
+
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  ul {
+    padding-left: 1.25rem; /* 20px */
+  }
+
+  /* Responsive Design for Small Screens */
+  @media (max-width: 600px) {
+    html {
+      font-size: 90%; /* shrink base font slightly */
     }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #1f1d1d;
-      color: #ffffff;
-    }
-    header, main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2em;
-      background: #1f1d1d;
-      margin-top: 2em;
-      border-radius: 10px;
-    }
+
     .profile {
-      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 1em;
+      text-align: center;
     }
+
     .profile img {
-      width: 120px;
-      border-radius: 50%;
+      width: 6rem;
     }
-    h1 {
-      margin: 0;
+
+    header, main {
+      padding: 1rem;
+      margin: 1rem;
     }
-    section {
-      margin-top: 2em;
-    }
-    details summary {
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: 1em;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+  }
+</style>
 </head>
 
 <body>
