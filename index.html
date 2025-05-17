@@ -17,6 +17,45 @@
 
 <title>Dario Ramirez | Nuclear Physicist</title>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  document.getElementById('savePdfBtn').addEventListener('click', () => {
+    // Clone main content to not alter live DOM permanently
+    const mainClone = document.querySelector('main').cloneNode(true);
+
+    // Conference Participation section inside the clone
+    const confSection = mainClone.querySelector('section:nth-of-type(3)'); // Assuming order stays same
+
+    if (confSection) {
+      // Get all list items inside Conference Participation
+      const allEntries = Array.from(confSection.querySelectorAll('ul > li'));
+
+      // Keep only 5 newest (assuming they are in order, otherwise sort)
+      allEntries.forEach((li, i) => {
+        if (i >= 5) li.remove();
+      });
+
+      // Remove all 'Show more' details elements inside this section
+      confSection.querySelectorAll('details').forEach(d => d.remove());
+    }
+
+    // Remove all 'Show more' buttons from entire cloned content
+    mainClone.querySelectorAll('details').forEach(d => d.remove());
+
+    // Prepare PDF options
+    const opt = {
+      margin:       0.5,
+      filename:     'Dario_Ramirez_CV.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+
+    // Generate PDF from the cloned main (you can add header if needed)
+    html2pdf().set(opt).from(mainClone).save();
+  });
+</script>
+
 <script>
   window.MathJax = {
     tex: {
@@ -134,6 +173,8 @@
 </head>
 
 <body>
+  <button id="savePdfBtn" style="margin: 1em;">Save as PDF</button>
+
   <header>
     <div class="profile">
       <img src="images/profile_image.jpeg" alt="Profile Image">
